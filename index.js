@@ -1,3 +1,3 @@
-import bluebird from "bluebird"
+import {util1} from "./util1";
 
-bluebird.Promise.resolve(true).then(() => console.log("works!"))
+util1()

@@ -13,6 +13,6 @@
   "dependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
     "bluebird": "^3.7.2",
-    "nollup": "^0.14.1"
+    "nollup": "^0.14.2"
   }
 }
