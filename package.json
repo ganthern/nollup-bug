@@ -14,5 +14,9 @@
     "@rollup/plugin-commonjs": "^17.0.0",
     "bluebird": "^3.7.2",
     "nollup": "^0.14.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@rollup/plugin-babel": "^5.2.2"
   }
 }
