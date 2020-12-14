@@ -2,24 +2,18 @@ import path from "path"
 import nollup from 'nollup'
 import fs from "fs/promises"
 import {constants as fsConstants} from "fs"
+import nodeResolve from "@rollup/plugin-node-resolve"
+import commonJs from "@rollup/plugin-commonjs"
+import {rollup} from "rollup"
 
-function resolveExternalPlugin() {
-	return {
-		name: "resolve-external",
-		resolveId(id) {
-			if (id === "fs") {
-				return false
-			}
-		}
-	}
-}
+const bundler = nollup // change to "rollup" to see a difference
 
-(async function () {
-	const bundle = await nollup({
+;(async function () {
+	const bundle = await bundler({
 		input: [
 			"index.js",
 		],
-		plugins: [resolveExternalPlugin()]
+		plugins: [nodeResolve(), commonJs()]
 	})
 	console.log("Generating...")
 	const result = await bundle.generate({sourcemap: false, format: "esm"})
