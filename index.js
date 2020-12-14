@@ -1,1 +1,1 @@
-new Worker("./worker.js")
+import("./util1")
