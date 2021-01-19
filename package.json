@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nollup": "^0.14.3"
+    "nollup": "^0.14.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

@@ -1,6 +1,6 @@
-const fs = require("fs")
+import {a} from "./index"
 
-module.exports = function () {
-	fs.readFileSync("index.js")
-	console.log("success!")
+export function test() {
+	console.log("test: ", a)
+	console.log("test234567")
 }
